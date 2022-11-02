@@ -60,13 +60,13 @@ def search(key, value, json_file):
 
 if __name__ == '__main__':
 
-    with open('AutoClave5 JSON Files\AC2-07337-anon.json', 'r') as f:
+    with open('AutoClave5 JSON Files\AC4-02988-anon.json', 'r') as f:
         data = json.load(f)
         df = json_to_dataframe(data)
         print(df)
 
         #output to csv
-        df.to_csv('output1.csv', index=False)
+        df.to_csv('AC4-02988.csv', index=False)
 
 
 

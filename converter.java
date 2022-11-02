@@ -69,15 +69,15 @@ public class converter {
         "PartInformation_PartProbes"
 
       };
-      String status[] = {
-         "indig",
-         "non_indig",
-         "indig_ns"
-      };
-      String sex[] = {
-         "f",
-         "m"
-      };
+    //   String status[] = {
+    //      "indig",
+    //      "non_indig",
+    //      "indig_ns"
+    //   };
+    //   String sex[] = {
+    //      "f",
+    //      "m"
+    //   };
 
       // JDBC Database Object
       Connection connection = null;
