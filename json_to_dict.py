@@ -4,10 +4,10 @@ import collections.abc
 import pandas as pd
 
 # Opens JSON file as a DICT
-with open('AutoClave5 JSON Files\AC2-07337-anon.json', 'r') as f:
-    data = json.load(f)
+# with open('AutoClave5 JSON Files\AC2-07337-anon.json', 'r') as f:
+#     data = json.load(f)
 
-with open('AutoClave5 JSON Files\AC2-07337-anon.json', 'r') as f:
+with open('Matt/test_matt2.json' , 'r') as f:
     data = json.load(f)
 
 #JSON are loaded as a DICT in python 3.11
@@ -32,5 +32,24 @@ print(type(data))
 # flattenedDict = flatten(data)
 # print(flattenedDict)
 
+#print(data)
+
 flatDictionary = pd.json_normalize(data)
-print(flatDictionary)
+print(flatDictionary.to_string())
+#Write output to text file
+with open('Matt/test_matt2.txt', 'w') as f:
+    f.write(str(flatDictionary.to_string()))
+
+
+import pandas as pd
+
+# enter the json filename to be converted to json
+JSON_FILE = data
+
+# enter the csv filename you wish to save it as
+CSV_FILE = 'csv_filename.csv'
+
+with open(JSON_FILE, encoding = 'utf-8') as f :
+	df = pd.read_json(f)
+    
+df.to_csv(CSV_FILE, encoding = 'utf-8', index = False)
