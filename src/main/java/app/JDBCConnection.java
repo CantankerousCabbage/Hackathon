@@ -44,6 +44,125 @@ public class JDBCConnection {
 
     //LEFT AS TEMPLATE
 
+    public ArrayList<String> getFiles(String Column, String Value){
+        
+        ArrayList<String> output_Files = new ArrayList<String>();
+
+        Connection connection = null;
+
+        try{
+            connection = DriverManager.getConnection(DATABASE);
+            
+            Statement statement = connection.createStatement();
+            statement.setQueryTimeout(30);
+
+            String output = "";
+        
+            switch (Column) {
+                case "FilePath":
+                    output = "RunDetails_FilePath";
+                    break;
+                
+                case "LoadNumber":
+                    output = "RunDetails_LoadNumber";
+                    break;
+                
+                case "Equipment":
+                    output = "RunDetails_Equipment";
+                    break;
+
+                case "RunRecipe":
+                    output = "RunDetails_RunRecipe";
+                    break;
+
+                case "RunStart":
+                    output = "RunDetails_RunStart";
+                    break;
+
+                case "RunEnd":
+                    output = "RunDetails_RunEnd";
+                    break;
+                
+                case "RunDuration":
+                    output = "RunDetails_RunDuration";
+                    break;
+
+                case "FileLength":
+                    output = "RunDetails_FileLength";
+                    break;
+                    
+                case "OperatorName":
+                    output = "RunDetails_OperatorName";
+                    break;
+                
+                case "ExportControl":
+                    output = "RunDetails_ExportControl";
+                    break;
+
+                case "IP":
+                    output = "RunDetails_IP";
+                    break;
+
+                case "Index":
+                    output = "RunDetails_Index";
+                    break;
+
+                case "WorkOrder":
+                    output = "RunDetails_WorkOrder";
+                    break;
+
+                case "PartNumber":
+                    output = "RunDetails_PartNumber";
+                    break;
+
+                case "PartDescription":
+                    output = "RunDetails_PartDescription";
+                    break;
+
+                case "ToolLocation":
+                    output = "RunDetails_ToolLocation";
+                    break;
+
+                case "PartTCs":
+                    output = "RunDetails_PartTCs";
+                    break;
+
+                case "PartProbes":
+                    output = "RunDetails_PartProbes";
+                    break;
+
+                case "OtherSensors":
+                    output = "RunDetails_OtherSensors";
+                    break;            
+            }
+
+            String query = "SELECT RunDetails_FileName FROM JASON WHERE " + output + " == " + Value;
+
+            ResultSet results = statement.executeQuery(query);
+
+            while (results.next()) {
+                String name = results.getString("RunDetails_FileName");
+                output_Files.add(name);
+            }
+            statement.close();
+        }catch (SQLException e) {
+            // If there is an error, lets just pring the error
+            System.err.println(e.getMessage());
+        } finally {
+            // Safety code to cleanup
+            try {
+                if (connection != null) {
+                    connection.close();
+                }
+            } catch (SQLException e) {
+                // connection close failed.
+                System.err.println(e.getMessage());
+            }
+        }
+        return output_Files;
+
+    }
+
     // public ArrayList<LGA> getLGAs() {
     //     // Create the ArrayList of LGA objects to return
     //     ArrayList<LGA> lgas = new ArrayList<LGA>();
