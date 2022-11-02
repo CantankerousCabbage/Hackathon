@@ -31,12 +31,12 @@ import java.sql.Statement;
  * @author Timothy Wiley, 2021. email: timothy.wiley@rmit.edu.au
 
  */
-public class CTGProcessCSV_non_school_education {
+public class converter {
 
    // MODIFY these to load/store to/from the correct locations
    
    private static final String DATABASE = "jdbc:sqlite:database/json.db";
-   private static final String CSV_FILE = "output.csv";
+   private static final String CSV_FILE = "output1.csv";
 
 
    public static void main (String[] args) {
@@ -45,11 +45,28 @@ public class CTGProcessCSV_non_school_education {
       // These are specific to the given file and should be changed for each file.
       // This is a *simple* way to help you get up and running quickly wihout being confusing
       String category[] = {
-         "nsq_ce_ii",
-         "nsq_ad_dl",
-         "nsq_bdl",
-         "nsq_gd_gcl",
-         "nsq_pgdl",
+        "RunDetails_FileName",
+        "RunDetails_FilePath",
+        "RunDetails_LoadNumber",
+        "RunDetails_Equipment",
+        "RunDetails_RunRecipe",
+        "RunDetails_RunStart",
+        "RunDetails_RunEnd",
+        "RunDetails_RunDuration",
+        "RunDetails_FileLength",
+        "RunDetails_OperatorName",
+        "RunDetails_ExportControl",
+        "RunDetails_IP",
+        "PartInformation_Index",
+        "PartInformation_WorkOrder",
+        "PartInformation_PartNumber",
+        "PartInformation_PartDescription",
+        "PartInformation_ToolLocation",
+        "PartInformation_Comment1",
+        "PartInformation_Comment2",
+        "PartInformation_Comment3",
+        "PartInformation_PartTCs",
+        "PartInformation_PartProbes"
 
       };
       String status[] = {
@@ -110,7 +127,7 @@ public class CTGProcessCSV_non_school_education {
                // statement.setQueryTimeout(30);
 
                // Create Insert Statement
-               String query = "INSERT into NonSchoolEducation VALUES ("
+               String query = "INSERT into JASON VALUES ("
                               + lgaCode + ","
                               + "'" + status[indexStatus] + "',"
                               + "'" + sex[indexSex] + "',"
