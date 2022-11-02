@@ -27,7 +27,7 @@ def json_to_dataframe(data_in):
         if isinstance(data, dict):
             rows = [{}]
             for key, value in data.items():
-                rows = cross_join(rows, flatten_json(value, prev_heading + '.' + key))
+                rows = cross_join(rows, flatten_json(value, prev_heading + '_' + key))
         elif isinstance(data, list):
             rows = []
             for item in data:
@@ -60,7 +60,7 @@ def search(key, value, json_file):
 
 if __name__ == '__main__':
 
-    with open('Matt/test_matt2.json', 'r') as f:
+    with open('AutoClave5 JSON Files\AC2-07337-anon.json', 'r') as f:
         data = json.load(f)
         df = json_to_dataframe(data)
         print(df)
