@@ -26,7 +26,7 @@ public class Page_1 implements Handler {
 
         // Add some Header information
         html = html + "<head>" + 
-               "<title>HPage 1</title>";
+               "<title>Page 1</title>";
 
         // Add some CSS (external file)
         html = html + "<link rel='stylesheet' type='text/css' href='common.css' />";
@@ -47,9 +47,7 @@ public class Page_1 implements Handler {
         // Add header content block
         html = html + """
             <div class='header'>
-                <h1>
-                    Homepage
-                </h1>
+                <h1>Page_1</h1>
             </div>
         """;
 

@@ -47,9 +47,7 @@ public class Page_4 implements Handler {
         // Add header content block
         html = html + """
             <div class='header'>
-                <h1>
-                    Homepage
-                </h1>
+                <h1>Page_4</h1>
             </div>
         """;
 
