@@ -38,15 +38,35 @@ def json_to_dataframe(data_in):
 
     return pandas.DataFrame(flatten_json(data_in))
 
+
+def search(key, value, json_file):
+    """
+    Function that will  search in json file
+
+    Args:
+        key: key to search
+        value: value to search
+        json_file: the file to search
+
+    Returns:
+
+    """
+    with open(json_file, 'r') as file:
+        data = json.load(file)
+        for item in data:
+            if item[key] == value:
+                return True
+        return False
+
 if __name__ == '__main__':
 
-    with open('AutoClave5 JSON Files\AC2-07337-anon.json', 'r') as f:
+    with open('Matt/test_matt2.json', 'r') as f:
         data = json.load(f)
         df = json_to_dataframe(data)
         print(df)
 
         #output to csv
-        df.to_csv('output.csv', index=False)
+        df.to_csv('output1.csv', index=False)
 
-        
+
 
