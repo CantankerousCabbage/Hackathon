@@ -49,8 +49,11 @@ public class homepage implements Handler {
         html = html + """
             <div class='header'>
                 <h1>
-                    Homepage
+                    Welcome to Boeing DataBase GUI
                 </h1>
+
+                <img src="img_chania.jpg" alt="Flowers in Chania">
+
             </div>
         """;
 
@@ -58,6 +61,8 @@ public class homepage implements Handler {
 
         // Close Content div
         html = html + "</div>";
+
+
 
         // Footer
        html = html + nav.getFooter();
