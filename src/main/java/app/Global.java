@@ -10,9 +10,7 @@ public class Global {
                     <div class='topnav'>
                         <a href='/'>Homepage</a>
                         <a href='Page_1.html'>Page_1</a>
-                        <a href='Page_2.html'>Page_2</a>
-                        <a href='Page_3.html'>Page_3</a>
-                        <a href='Page_4.html'>Page_4</a>
+                        // <a href='Page_2.html'>Page_2</a>
                     </div>
                 """;
         return topNav;
@@ -25,8 +23,6 @@ public class Global {
                 <a href='/'>Homepage</a>
                 <a href='Page_1.html'>Page_1</a>
                 <a href='Page_2.html'>Page_2</a>
-                <a href='Page_3.html'>Page_3</a>
-                <a href='Page_4.html'>Page_4</a>
                 </div>
                     """;
         return NavBar;
