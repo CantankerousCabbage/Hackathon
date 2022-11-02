@@ -126,10 +126,14 @@ public class Page_1 implements Handler {
             html = html + "</form>";   
         }
         String featureData = context.formParam("featureData");
-
+        ArrayList<String> arrayData = new ArrayList<String>();
+        
         if(feature != null && featureData != null){
 
-            jdbc.getFiles(feature, featureData);
+            arrayData = jdbc.getFiles(feature, featureData);
+
+
+
 
         }
 
