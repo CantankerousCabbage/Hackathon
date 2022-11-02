@@ -1,0 +1,17 @@
+   RunDetails.FileName RunDetails.FilePath  ... PartInformation.PartTCs PartInformation.PartProbes
+0        AC2-07337.DAT  \\server1\AC2-DATA  ...                     TC9                      MON45
+1        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC10                      MON45
+2        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC35                      MON32
+3        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC35                      MON33
+4        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC36                      MON32
+5        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC36                      MON33
+6        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC37                      MON32
+7        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC37                      MON33
+8        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC44                      MON50
+9        AC2-07337.DAT  \\server1\AC2-DATA  ...                    TC45                      MON50
+10       AC2-07337.DAT  \\server1\AC2-DATA  ...                     NaN                       MON4
+11       AC2-07337.DAT  \\server1\AC2-DATA  ...                     NaN                       MON6
+12       AC2-07337.DAT  \\server1\AC2-DATA  ...                     NaN                       MON9
+13       AC2-07337.DAT  \\server1\AC2-DATA  ...                     NaN                      MON10
+
+[14 rows x 22 columns]
