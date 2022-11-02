@@ -127,9 +127,11 @@ public class Page_1 implements Handler {
         }
         String featureData = context.formParam("featureData");
 
-        jdbc.getFiles(feature, featureData);
+        if(feature != null && featureData != null){
 
+            jdbc.getFiles(feature, featureData);
 
+        }
 
 
 
