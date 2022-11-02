@@ -1,0 +1,34 @@
+{
+    "RunDetails": {
+        "FileName": "AC2-07338.DAT",
+        "FilePath": "\\\\server1\\AC2-DATA"
+    },
+    "PartInformation": [
+        {
+            "Index": 1,
+            "WorkOrder": "3458147",
+            "PartTCs": [
+                "TC35",
+                "TC36",
+                "TC37"
+            ],
+            "PartProbes": [
+                "MON30",
+                "MON50"
+            ],
+            "OtherSensors": []
+        },
+        {
+            "Index": 2,
+            "WorkOrder": "3458148",
+            "PartTCs": [
+                "TC1",
+                "TC2"
+            ],
+            "PartProbes": [
+                "MON45"
+            ],
+            "OtherSensors": []
+        }
+    ]
+}
