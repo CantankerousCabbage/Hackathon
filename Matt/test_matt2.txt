@@ -1,0 +1,2 @@
+                                                                PartInformation RunDetails.FileName RunDetails.FilePath
+0  [{'Index': 1, 'WorkOrder': '3458147'}, {'Index': 2, 'WorkOrder': '3458148'}]       AC2-07338.DAT  \\server1\AC2-DATA
