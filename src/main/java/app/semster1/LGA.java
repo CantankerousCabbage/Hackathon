@@ -1,4 +1,4 @@
-package app;
+package app.semster1;
 
 /**
  * Class represeting a LGA from the Studio Project database

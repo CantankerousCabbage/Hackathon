@@ -1,6 +1,9 @@
-package app;
+package app.semster1;
 
 import java.util.ArrayList;
+
+import app.Global;
+import app.JDBCConnection;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
@@ -32,8 +35,8 @@ public class PageIndex implements Handler {
                 // html = html + Global.getTopNav();
                 String headerText = "Closing The Gap";
 
-                html = html + Global.getHeader(headerText);
-                html = html + Global.getNavBar();
+                // html = html + Global.getHeader(headerText);
+                // html = html + Global.getNavBar();
 
                 html = html + "<div class='content'>";
                 html = html + "<h1>Homepage</h1>";

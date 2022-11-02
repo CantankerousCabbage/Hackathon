@@ -1,5 +1,11 @@
 package app;
 
+import app.homepage;
+// import app.semster1.PageMission;
+// import app.semster1.PageST21;
+// import app.semster1.PageST22;
+// import app.semster1.PageST31;
+// import app.semster1.PageST32;
 import io.javalin.Javalin;
 import io.javalin.core.util.RouteOverviewPlugin;
 
@@ -36,22 +42,20 @@ public class App {
 
     public static void configureRoutes(Javalin app) {
         // All webpages are listed here as GET pages
-        app.get(PageIndex.URL, new PageIndex());
-        app.get(PageMission.URL, new PageMission());
-        app.get(PageST21.URL, new PageST21());
-        app.get(PageST22.URL, new PageST22());
-        app.get(PageST31.URL, new PageST31());
-        app.get(PageST32.URL, new PageST32());
+        app.get(homepage.URL, new homepage());
+        app.get(Page_1.URL, new Page_1());
+        app.get(Page_2.URL, new Page_2());
+        app.get(Page_3.URL, new Page_3());
+        app.get(Page_4.URL, new Page_4());
+        // app.get(PageST32.URL, new PageST32());
 
         // Add / uncomment POST commands for any pages that need web form POSTS
-        // app.post(PageIndex.URL, new PageIndex());
-        // app.post(PageMission.URL, new PageMission());
-        app.post(PageST21.URL, new PageST21());
-        app.post(PageST22.URL, new PageST22());
-        app.post(PageST31.URL, new PageST31());
-        // app.post(PageST32.URL, new PageST32());
-        // app.post(PageST31.URL, new PageST31());
-        app.post(PageST32.URL, new PageST32());
+        app.post(homepage.URL, new homepage());
+        app.post(Page_1.URL, new Page_1());
+        app.post(Page_2.URL, new Page_2());
+        app.post(Page_3.URL, new Page_3());
+        app.post(Page_4.URL, new Page_4());
+        
     }
 
 }

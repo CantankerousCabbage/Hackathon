@@ -1,4 +1,4 @@
-package app;
+package app.semster1;
 
 public class PageDataST31 {
     // LGA 2016 Code

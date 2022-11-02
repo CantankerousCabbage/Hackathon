@@ -1,7 +1,9 @@
-package app;
+package app.semster1;
 
 import java.util.ArrayList;
 
+import app.Global;
+import app.JDBCConnection;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
@@ -50,10 +52,10 @@ public class PageMission implements Handler {
 
         String headerText = "Our Mission";
 
-        html = html + Global.getHeader(headerText);
-        // Add header content block
-        html = html + Global.getNavBar();
-        //html = html + """
+        // html = html + Global.getHeader(headerText);
+        // // Add header content block
+        // html = html + Global.getNavBar();
+        // //html = html + """
             //<div class='header'>
                 //<h1>Our Mission</h1>
             //</div>
