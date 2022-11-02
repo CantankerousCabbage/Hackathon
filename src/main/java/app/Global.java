@@ -34,7 +34,7 @@ public class Global {
         String header = """
                 <div class='header'>
                     <h1>
-                    <a href='/'><img src='LogoV1.png' class='top-image' alt='RMIT logo' height='75'></a> 
+                    <a href='/'><img src='Boeing_full_logo.svg.png' class='top-image' alt='RMIT logo' height='75'></a> 
                     </h1>
                     </div>
                     """;

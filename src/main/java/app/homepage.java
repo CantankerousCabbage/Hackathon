@@ -52,7 +52,7 @@ public class homepage implements Handler {
                     Welcome to Boeing DataBase GUI
                 </h1>
 
-                <img src="img_chania.jpg" alt="Flowers in Chania">
+                <img src="Plane.webp" alt=Flowers in Chania>
 
             </div>
         """;

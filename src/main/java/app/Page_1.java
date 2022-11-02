@@ -139,10 +139,8 @@ public class Page_1 implements Handler {
                 html = html + "<li>" + arrayData.get(i) + "</li>";
                 html = html + "</ul>";
 
-
-
-
         }
+    }
 
 
 
