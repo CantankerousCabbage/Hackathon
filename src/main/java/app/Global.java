@@ -9,8 +9,8 @@ public class Global {
         String topNav = """
                     <div class='topnav'>
                         <a href='/'>Homepage</a>
-                        <a href='Page_1.html'>Page_1</a>
-                        <a href='Page_2.html'>Page_2</a>
+                        <a href='Page_1.html'>Cure Search</a>
+                        <a href='Page_2.html'>Submissions</a>
                     </div>
                 """;
         return topNav;
@@ -51,16 +51,17 @@ public class Global {
                     </style>
                     """;
         return style;
+                }
 
-         // // Get footer
-    // public String getFooter() {
-    //     String footer = """
-    //                 <div class='footer'>
-    //                     <!-- <p>Footer</p> -->
-    //                 </div>
-    //             """;
+         // Get footer
+    public String getFooter() {
+        String footer = """
+                    <div class='footer'>
+                        <!-- <p>Footer</p> -->
+                    </div>
+                """;
 
-    //     return footer;
+        return footer;
     }
 }
 
