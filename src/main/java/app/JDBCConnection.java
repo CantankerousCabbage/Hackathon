@@ -136,7 +136,7 @@ public class JDBCConnection {
                     break;            
             }
 
-            String query = "SELECT RunDetails_FileName FROM JASON WHERE " + output + " == " + Value;
+            String query = "SELECT RunDetails_FileName FROM JASON WHERE " + output + " == " + output;
 
             ResultSet results = statement.executeQuery(query);
 
