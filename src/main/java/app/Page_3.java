@@ -17,48 +17,50 @@ import io.javalin.http.Handler;
 public class Page_3 implements Handler {
 
     // URL of this page relative to http://localhost:7001/
-    public static final String URL = "/Page_3.html";
+    public static final String URL = "/";
 
     @Override
     public void handle(Context context) throws Exception {
         // Create a simple HTML webpage in a String
         String html = "<html>";
-
-        // Add some Header information
+        
         html = html + "<head>" + 
-               "<title>Page 3</title>";
+               "<title>Homepage</title>";
 
         // Add some CSS (external file)
-        html = html + "<link rel='stylesheet' type='text/css' href='common.css' />";
+        html = html + "<link rel='stylesheet' type='text/css' href='LogIn_Page.css' />";
 
         // Add some Javascript
         html = html + "<script type ='text/javascript' src='javaScript.js'></script>";
 
         html = html + "</head>";
 
-        // Add the body
-        html = html + "<body>";
-        
-        //Page TopNav
-        Global nav = new Global();
-        html = html + nav.getHeader();
-        html = html + nav.getTopNav();
-
-        // Add header content block
-        html = html + """
-            <div class='header'>
-                <h1>Page_3</h1>
-            </div>
-        """;
-
-        JDBCConnection jdbc = new JDBCConnection();
-
-        // Close Content div
+        html = html + "<div class='header'>";
+        html = html + "<h3>Please Enter The Password to Enter:</h3>";
         html = html + "</div>";
 
-        // Footer
-       html = html + nav.getFooter();
-      
+        html = html + "<form action='/' method='post'>";
+
+        html = html + "<div>";
+        html = html + "   <div class='header'>";
+        html = html + "     <input type='text' id='Password' name='Password'><br>";
+        html = html + "     <input type='submit' value='Submit'>";
+        html = html + "   </div>";
+        html = html + "</form>";
+
+        String Pass = context.formParam("Password");
+
+        if (Pass != null){
+            if (Pass.equals("Boeing")){
+                html = html + """
+                <script>
+                window.location.replace('http://localhost:7001/homepage.html')
+                </script>
+                """;
+            }
+            html = html + "<div class='header'><h2>Incorrect Password<h2></div>";
+        }
+
 
         // Finish the HTML webpage
         html = html + "</body>" + "</html>";

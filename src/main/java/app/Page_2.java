@@ -56,6 +56,20 @@ public class Page_2 implements Handler {
         // Close Content div
         html = html + "</div>";
 
+        html = html + """
+            <body>
+
+            <p>Upload a new JASON File:</p>
+
+            <form action='/action_page.php'>
+            <input type='file' id='myFile' name='filename'>
+            <input type='submit'>
+            </form>
+
+            </body>
+                """;
+
+
         // Footer
     //    html = html + nav.getFooter();
       

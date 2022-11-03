@@ -7,20 +7,8 @@
 body {
    font-family: Arial;
    padding: 10px;
-   background-image: url('Cloud.jfif');
+   background-color: grey;
    margin: 0;
-}
-
-.Plane_image {
-   text-align: center;
-   width: 100%;
-   height: auto;
-}
-
-img.Plane_imgage{
-   width: 80%;
-   height: auto;
-
 }
 
 /* Header (div) formatting */
@@ -41,6 +29,8 @@ img.Plane_imgage{
 
 .header h2 {
    font-size: 25px;
+   color: red;
+   text-align: center;
 }
 
 .header h3 {
