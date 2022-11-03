@@ -57,7 +57,7 @@ public class Page_2 implements Handler {
         html = html + "</div>";
 
         // Footer
-       html = html + nav.getFooter();
+    //    html = html + nav.getFooter();
       
 
         // Finish the HTML webpage

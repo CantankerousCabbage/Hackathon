@@ -22,6 +22,8 @@ public class homepage implements Handler {
 
     @Override
     public void handle(Context context) throws Exception {
+
+        Global nav = new Global();
         // Create a simple HTML webpage in a String
         String html = "<html>";
 
@@ -34,6 +36,7 @@ public class homepage implements Handler {
 
         // Add some Javascript
         html = html + "<script type ='text/javascript' src='javaScript.js'></script>";
+        html = html + nav.getStyle();
 
         html = html + "</head>";
 
@@ -41,14 +44,8 @@ public class homepage implements Handler {
         html = html + "<body>";
         
         //Page TopNav
-        Global nav = new Global();
-        html =  html +  """
-            <div>
-                <h1>
-                <a href='/'><img src='Boeing_full_logo.svg.png' class='top-image' alt='RMIT logo' height='75'></a> 
-                </h1>
-                </div>
-                """;
+        
+        html = html + nav.getHeader();
         html = html + nav.getTopNav();
 
         // Add header content block
@@ -71,7 +68,7 @@ public class homepage implements Handler {
 
 
         // Footer
-       html = html + nav.getFooter();
+    //    html = html + nav.getFooter();
       
 
         // Finish the HTML webpage
