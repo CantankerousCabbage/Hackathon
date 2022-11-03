@@ -98,28 +98,32 @@ public class Page_1 implements Handler {
 
         html = html + "<form action='/Page_1.html' method='post'>";
 
-        html = html + "<div class='grid-container_input1'>";
-        html = html + "   <div class='grid-iteminput1'>";
-        html = html + "      <label for='feature'>Select Feature:</label><br>";
+        html = html + "<div class='grid-container_input221'>";
+
+        html = html + "   <div class='grid-iteminput221'>";
+        html = html + "      <label for='feature'>Select Feature:</label>";
         html = html + "      <select id='feature' name='feature' class=dropDownSize>"; 
         html = html + "         <option value='' selected disabled hidden>Choose here</option>";      
         for (int index = 0; index < sParam.size(); index++) {
             html = html + "         <option>" + sParam.get(index) + "</option>";
         }
         html = html + "      </select>";
-        html = html + "   </div>";
         //<button type='submit' class='btn btn-primary'>Submit</button>"
         
-        
-        html = html + "   <div class='grid-search1'>";
-        html = html + "     <label for='featureData'>" + "Feature Value" + ":</label><br>";
-        html = html + "     <input type='text' id='featureData' name='featureData' value='Search'><br>";
         html = html + "   </div>";
-       
-        html = html + "     <input type='submit' class='button' value='Submit'>";
         
-        html = html + "</div>";
-        html = html + "</form>";   
+
+        
+
+
+            
+            html = html + "<div class='grid-container_input221'>";
+            html = html + "   <div class='grid-iteminput221'>";
+            html = html + "     <label for='featureData'>" + "Feature Value" + ":</label><br>";
+            html = html + "     <input type='text' id='featureData' name='featureData' value='Search'><br>";
+            html = html + "     <input type='submit' value='Submit'>";
+            html = html + "   </div>";
+            html = html + "</form>";   
 
         String feature = context.formParam("feature");
         String featureData = context.formParam("featureData");
@@ -147,9 +151,8 @@ public class Page_1 implements Handler {
             html = "<h2>File Name List:</h2>";
             for (int i = 0; i<arrayData.size(); i++) {
                 html = html + "<ul style='list-style-type:square;'>";
-                html = html + "<li>" + "<a href=/images/" + arrayDataRenamed.get(i)+" target ='_blank'" + ">"+ arrayDataRenamed.get(i) +"</a>" + "</li>";
+                html = html + "<li>" + "<a href=/images/AutoClave5_JSON_Files/" + arrayDataRenamed.get(i)+" target ='_blank'" + ">"+ arrayDataRenamed.get(i) +"</a>" + "</li>";
                 html = html + "</ul>";
-                
 
         }
     }
