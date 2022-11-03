@@ -11,7 +11,17 @@ body {
    margin: 0;
 }
 
+.Plane_image {
+   text-align: center;
+   width: 100%;
+   height: auto;
+}
 
+img.Plane_imgage{
+   width: 80%;
+   height: auto;
+
+}
 
 /* Header (div) formatting */
 .header {

@@ -55,12 +55,17 @@ public class homepage implements Handler {
                 <h1>
                     Welcome to Boeing DataBase GUI
                 </h1>
-
-                <img src="Plane.webp" alt=Flowers in Chania>
-
             </div>
         """;
+        
 
+        html = html + """
+            <div class='Plane_image'>
+                <img src="Plane.webp" class='Plane_imgage'>
+            </div>
+        """;
+                
+               
         JDBCConnection jdbc = new JDBCConnection();
 
         // Close Content div
