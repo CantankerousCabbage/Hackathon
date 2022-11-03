@@ -6,7 +6,6 @@ public class temp {
         
         String input = "OperatorName";
 
-
         String output = "";
         
         switch (input) {

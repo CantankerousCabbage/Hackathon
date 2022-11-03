@@ -126,16 +126,21 @@ public class Page_1 implements Handler {
             html = html + "</form>";   
         }
         String featureData = context.formParam("featureData");
+        
         ArrayList<String> arrayData = new ArrayList<String>();
 
         if(feature != null && featureData != null){
 
             arrayData = jdbc.getFiles(feature, featureData);
-
-
-
+            
+            html = "<h2>File Name List:</h2>";
+            for (int i = 0; i<arrayData.size(); i++) {
+                html = html + "<ul style='list-style-type:square;'>";
+                html = html + "<li>" + arrayData.get(i) + "</li>";
+                html = html + "</ul>";
 
         }
+    }
 
 
 
