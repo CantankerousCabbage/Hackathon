@@ -10,7 +10,7 @@ public class Global {
                     <div class='topnav'>
                         <a href='/'>Homepage</a>
                         <a href='Page_1.html'>Page_1</a>
-                        // <a href='Page_2.html'>Page_2</a>
+                        <a href='Page_2.html'>Page_2</a>
                     </div>
                 """;
         return topNav;
@@ -52,5 +52,18 @@ public class Global {
 
         return footer;
     }
+        // Add header content block
+    public String getStyle() {
+        String style = """
+                    <style>
+                    body {
+                    background-image: 'Cloud.jfif';
+                    }
+                    </style>
+                    """;
+        return style;
+    }
 }
+
+
 

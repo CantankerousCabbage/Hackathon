@@ -127,7 +127,7 @@ public class Page_1 implements Handler {
         }
         String featureData = context.formParam("featureData");
         ArrayList<String> arrayData = new ArrayList<String>();
-        
+
         if(feature != null && featureData != null){
 
             arrayData = jdbc.getFiles(feature, featureData);
@@ -157,7 +157,7 @@ public class Page_1 implements Handler {
         // Close Content div
         html = html + "</div>";
         // Footer
-       html = html + nav.getFooter();
+    //    html = html + nav.getFooter();
       
 
         // Finish the HTML webpage
