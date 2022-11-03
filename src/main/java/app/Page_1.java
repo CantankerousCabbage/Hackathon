@@ -136,6 +136,7 @@ public class Page_1 implements Handler {
 
             arrayData = jdbc.getFiles(feature, featureData);
             System.out.print("Loop Reached");
+            System.out.print(arrayData);
             html = "<h2>File Name List:</h2>";
             for (int i = 0; i<arrayData.size(); i++) {
                 html = html + "<ul style='list-style-type:square;'>";
