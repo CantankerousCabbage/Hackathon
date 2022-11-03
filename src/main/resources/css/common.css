@@ -64,7 +64,8 @@ img.top-image {
    text-decoration: none;
    display: grid;
    grid-template-columns: auto auto;
-   min-height: 400px;
+   column-width: 50%;
+   min-height: 100px;
 }
 
 .topitem1{
@@ -73,7 +74,6 @@ img.top-image {
 }
 
 .topitem2{
-
    grid-column-start: 2;
    grid-column-end: 2;
 }
