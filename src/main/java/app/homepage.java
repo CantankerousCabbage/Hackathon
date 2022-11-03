@@ -46,6 +46,7 @@ public class homepage implements Handler {
         //Page TopNav
         
         html = html + nav.getHeader();
+        
         html = html + nav.getTopNav();
 
         // Add header content block

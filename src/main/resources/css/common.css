@@ -17,6 +17,7 @@ body {
 .header {
    padding: 10px;
    text-align: center;
+   width: 100%;
    color: white;
 }
 
@@ -40,7 +41,7 @@ img.top-image {
 /* CSS Layout from W3Schools: https://www.w3schools.com/css/css_templates.asp */
 .topnav {
    overflow: hidden;
-   background-color: #333;
+   background-color: rgb(232, 232, 15);
 }
 
 /* Style the topnav links */
@@ -56,7 +57,7 @@ img.top-image {
 .topnav {
    overflow: hidden;
    background-color: rgb(251, 250, 250);
-   min-width: 200;
+   min-width: 100%;
 }
 
 /* Style the topnav links */
