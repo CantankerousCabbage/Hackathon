@@ -28,7 +28,13 @@ img.Plane_imgage{
    padding: 10px;
    text-align: center;
    width: 100%;
-   color: white;
+   color: rgb(0, 0, 0);
+}
+
+.gh {
+   text-align: center;
+   color: rgb(3, 3, 3);
+
 }
 
 .pg_3{
