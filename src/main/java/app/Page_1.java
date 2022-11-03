@@ -151,9 +151,9 @@ public class Page_1 implements Handler {
             html = "<h2>File Name List:</h2>";
             for (int i = 0; i<arrayData.size(); i++) {
                 html = html + "<ul style='list-style-type:square;'>";
-                html = html + "<li>" + "<a href=/images/" + arrayDataRenamed.get(i)+" target ='_blank'" + ">"+ arrayDataRenamed.get(i) +"</a>" + "</li>";
+                html = html + "<li>" + "<a href=/Page_2.html" + ">"+ arrayDataRenamed.get(i) +"</a>" + "</li>";
                 html = html + "</ul>";
-                
+
 
         }
     }
