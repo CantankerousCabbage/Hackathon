@@ -11,7 +11,17 @@ body {
    margin: 0;
 }
 
+.Plane_image {
+   text-align: center;
+   width: 100%;
+   height: auto;
+}
 
+img.Plane_imgage{
+   width: 80%;
+   height: auto;
+
+}
 
 /* Header (div) formatting */
 .header {
@@ -46,18 +56,40 @@ img.top-image {
 
 /* Style the topnav links */
 .topnav a {
+   text-align: center;
    float: left;
    display: block;
-   color: #f2f2f2;
-   text-align: center;
+   color: #050505;
+   font-size: larger;
+   font-weight: bolder;
    padding: 14px 16px;
    text-decoration: none;
+   min-height: 100px;
+}
+
+.topitem1{
+   grid-column-start: 1;
+   grid-column-end: 2;
+   width: 100%;
+   
+}
+
+.topitem2{
+   grid-column-start: 2;
+   grid-column-end: 3; 
+   width: 100%;
+   
+   
 }
 
 .topnav {
+   width: 100%;
    overflow: hidden;
-   background-color: rgb(251, 250, 250);
-   min-width: 100%;
+   background-color: rgb(157, 201, 228);
+   display: inline-grid;
+   grid-template-columns: auto auto;
+   min-height: 100px;
+
 }
 
 /* Style the topnav links */
@@ -65,9 +97,9 @@ img.top-image {
    float: left;
    display: block;
    color: #080000;
-   text-align: center;
    padding: 14px 16px;
    text-decoration: none;
+   width: 100%;
 }
 
 /* Change color on hover */
