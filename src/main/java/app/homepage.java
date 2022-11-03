@@ -42,7 +42,13 @@ public class homepage implements Handler {
         
         //Page TopNav
         Global nav = new Global();
-        html = html + nav.getHeader();
+        html =  html +  """
+            <div>
+                <h1>
+                <a href='/'><img src='Boeing_full_logo.svg.png' class='top-image' alt='RMIT logo' height='75'></a> 
+                </h1>
+                </div>
+                """;
         html = html + nav.getTopNav();
 
         // Add header content block
