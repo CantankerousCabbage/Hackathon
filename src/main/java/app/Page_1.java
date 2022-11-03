@@ -135,12 +135,23 @@ public class Page_1 implements Handler {
         if(feature != null && featureData != null){
 
             arrayData = jdbc.getFiles(feature, featureData);
-            System.out.print("Loop Reached");
-            System.out.print(arrayData);
+            ArrayList<String> arrayDataRenamed = new ArrayList<String>();
+            for(int i = 0; i < arrayData.size(); i++){
+               //ArrayList<String> arrayDataRenamed = new ArrayList<String>();
+               String temp = arrayData.get(i);
+                temp = temp.substring(0, temp.length() - 4);
+                temp = temp.concat("-anon.html");
+                //System.out.print(temp);
+
+               arrayDataRenamed.add(temp);
+            }
+
+            //System.out.print("Loop Reached");
+            //ystem.out.print(arrayData);
             html = "<h2>File Name List:</h2>";
             for (int i = 0; i<arrayData.size(); i++) {
                 html = html + "<ul style='list-style-type:square;'>";
-                html = html + "<li>" + arrayData.get(i) + "</li>";
+                html = html + "<li>" + "<a href=/AutoClave5_JSON_Files/" + arrayDataRenamed.get(i)+" target ='_blank'" + ">"+ arrayDataRenamed.get(i) +"</a>" + "</li>";
                 html = html + "</ul>";
 
         }
