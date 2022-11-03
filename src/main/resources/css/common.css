@@ -52,12 +52,27 @@ img.top-image {
    text-align: center;
    padding: 14px 16px;
    text-decoration: none;
+   display: grid;
+   grid-template-columns: auto auto;
+   min-height: 400px;
+}
+
+.topitem1{
+   grid-column-start: 1;
+   grid-column-end: 1;
+}
+
+.topitem2{
+
+   grid-column-start: 2;
+   grid-column-end: 2;
 }
 
 .topnav {
    overflow: hidden;
    background-color: rgb(202, 199, 198);
    min-width: 100%;
+
 }
 
 /* Style the topnav links */
