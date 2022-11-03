@@ -109,24 +109,26 @@ public class Page_1 implements Handler {
         }
         html = html + "      </select>";
         //<button type='submit' class='btn btn-primary'>Submit</button>"
-        html = html + "      <input type='submit' value='Submit'>";
+        
         html = html + "   </div>";
-        html = html + "</form>";
+        
 
-        String feature = context.formParam("feature");
+        
 
-        if(feature != null){
-            html = html + "<form action='/Page_1.html'>";
+
+            
             html = html + "<div class='grid-container_input221'>";
             html = html + "   <div class='grid-iteminput221'>";
-            html = html + "     <label for='fname'>" + feature + ":</label><br>";
+            html = html + "     <label for='featureData'>" + "Feature Value" + ":</label><br>";
             html = html + "     <input type='text' id='featureData' name='featureData' value='Search'><br>";
             html = html + "     <input type='submit' value='Submit'>";
             html = html + "   </div>";
             html = html + "</form>";   
-        }
+
+        String feature = context.formParam("feature");
         String featureData = context.formParam("featureData");
         System.out.print(featureData);
+        System.out.println(feature);
         
         ArrayList<String> arrayData = new ArrayList<String>();
 
