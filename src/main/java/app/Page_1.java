@@ -126,13 +126,14 @@ public class Page_1 implements Handler {
             html = html + "</form>";   
         }
         String featureData = context.formParam("featureData");
+        System.out.print(featureData);
         
         ArrayList<String> arrayData = new ArrayList<String>();
 
         if(feature != null && featureData != null){
 
             arrayData = jdbc.getFiles(feature, featureData);
-            
+            System.out.print("Loop Reached");
             html = "<h2>File Name List:</h2>";
             for (int i = 0; i<arrayData.size(); i++) {
                 html = html + "<ul style='list-style-type:square;'>";
