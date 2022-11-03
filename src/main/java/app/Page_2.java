@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import io.javalin.http.Context;
 import io.javalin.http.Handler;
 
+import java.io.File; // Import the File class
+import java.io.FileNotFoundException; // Import this class to handle errors
+import java.util.Scanner; // Import the Scanner class to read text files
+
 /**
  * Example Index HTML class using Javalin
  * <p>
@@ -25,22 +29,17 @@ public class Page_2 implements Handler {
         String html = "<html>";
 
         // Add some Header information
-        html = html + "<head>" + 
-               "<title>Page 2</title>";
+        html = html + "<head>" +
+                "<title>Page 1</title>";
 
         // Add some CSS (external file)
         html = html + "<link rel='stylesheet' type='text/css' href='common.css' />";
-
         // Add some Javascript
         html = html + "<script type ='text/javascript' src='javaScript.js'></script>";
-
         html = html + "</head>";
-
         // Add the body
         html = html + "<body>";
-
-        
-        //Page TopNav
+        // Page TopNav
         Global nav = new Global();
         html = html + nav.getHeader();
         html = html + nav.getTopNav();
@@ -78,8 +77,7 @@ public class Page_2 implements Handler {
 
 
         // Footer
-    //    html = html + nav.getFooter();
-      
+        // html = html + nav.getFooter();
 
         // Finish the HTML webpage
         html = html + "</body>" + "</html>";
